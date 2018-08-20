@@ -21,11 +21,11 @@ public class main {
 		
 		for (int iii = 0; iii < 10; iii++) {
 			int ii = 0;
-			for (; ii < 100; ii++) {
+			for (; ii < 100 && animals[iii].isAlive() ; ii++) {
+				System.out.print(animals[iii].getWeight() + " ");
 				animals[iii].eat();
 				if (ii % 3 == 0)
 				animals[iii].poo();
-				System.out.print(animals[iii].getWeight() + " ");
 			}
 		}
 
