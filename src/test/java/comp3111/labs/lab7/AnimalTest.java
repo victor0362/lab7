@@ -20,5 +20,13 @@ public class AnimalTest {
 			a.eat();
 		assertEquals(a.isAlive(), false);
 	}
+	
+	@Test
+	public void testpoo() {
+		Animal a = new Animal();
+		for(int i=0; i<7;i++) 
+			a.poo();
+		assertEquals(a.isAlive(),false);
+	}
 
 }

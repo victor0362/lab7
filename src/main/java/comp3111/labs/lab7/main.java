@@ -16,8 +16,9 @@ public class main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Animal animals[] = new Animal[10];
-		for (Animal a : animals)
-			a = new Animal();
+		for (int i =0; i< 10; i++) {
+			animals[i] = new Animal();
+		}
 		
 		for (int iii = 0; iii < 10; iii++) {
 			int ii = 0;
